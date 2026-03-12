@@ -1,7 +1,10 @@
+using System.Media;
+
 namespace CatchButton
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
@@ -14,7 +17,8 @@ namespace CatchButton
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            SystemSounds.Beep.Play(); // 2_1. 소리 재생
+            MessageBox.Show("축하합니다~!");
         }
 
         private void button1_MouseEnter(object sender, EventArgs e)
@@ -29,6 +33,9 @@ namespace CatchButton
             button1.Location= new Point(nextX, nextY);
             // 5. 시각적피드백
             this.Text= $"버튼위치: ({nextX}, {nextY})";
+
+            // 2_1. 도망갈 때의 효과음 재생
+            SystemSounds.Asterisk.Play();
         }
     }
 }
