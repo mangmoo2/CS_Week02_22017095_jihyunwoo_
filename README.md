@@ -10,19 +10,19 @@ C# 프로그래밍학습
 -화면구성: "나를 잡아봐라"버튼, 재도전 버튼, 폼 창
 
 ## 실행화면 ##
--1단계코드의실행스크린샷 
+-1단계코드의실행스크린샷 (ui 구성, 버튼 이동 기능 구현, 버튼 이동범위 제한, 버튼 위치 정보 표시)
 
 <img width="804" height="478" alt="image" src="https://github.com/user-attachments/assets/9cb546ee-1b15-4535-9082-dd38c2e0c5e9" />
 
--2단계코드의실행스크린샷 
+-2단계코드의실행스크린샷 (버튼을 잡았을때와 놓쳤을때 적절한 피드백을주기)
 
 <img width="798" height="478" alt="image" src="https://github.com/user-attachments/assets/a31ea899-f0ab-4358-84ae-df4fbec0bf52" />
 
--3단계코드의실행스크린샷 
+-3단계코드의실행스크린샷 (점수를 계산하여 표시하기, 게임이 점점 어려워지도록 만들기)
 
 <img width="798" height="474" alt="image" src="https://github.com/user-attachments/assets/8cad1095-a1ec-4198-b253-1a8dc5693b1e" />
 
--4단계코드의실행스크린샷 
+-4단계코드의실행스크린샷 (게임오버 표시하기, 재도전 버튼 만들기)
 
 <img width="797" height="478" alt="image" src="https://github.com/user-attachments/assets/13cf5af1-6658-480b-a736-30eaaa2324e4" />
 
