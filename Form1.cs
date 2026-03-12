@@ -32,10 +32,11 @@ namespace CatchButton
 
         private void button1_MouseEnter(object sender, EventArgs e)
         {
+            // 버튼이 화면 밖으로 넘어가지 않게 수정 
+            int maxX = this.ClientSize.Width - button1.Width;
+            int maxY = this.ClientSize.Height - button1.Height;
             // 1. 난수생성기
             Random rd = new Random();
-            // 2. 가용영역계산_버튼이폼테두리에걸리지않게보호    
-            int maxX = this.ClientSize.Width; int maxY = this.ClientSize.Height;
             // 3. 랜덤좌표추출
             int nextX = rd.Next(0, maxX); int nextY = rd.Next(0, maxY);
             // 4. 위치할당
@@ -62,7 +63,7 @@ namespace CatchButton
 
         private void Update_() // 업데이트   
         {
-            this.Text = $"점수: {score}";
+            this.Text = $"점수: {score} 버튼위치: ({ button1.Location.X}, { button1.Location.Y})";
         }
 
         private void button2_Click(object sender, EventArgs e)
